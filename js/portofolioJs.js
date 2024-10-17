@@ -1,3 +1,4 @@
+// toggle button more info
 function toggleDetail(e) {
   const target = $(e.target);
 
