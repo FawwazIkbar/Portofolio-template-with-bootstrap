@@ -125,3 +125,24 @@ section::before {
 #work-3:hover::after {
   content: "Management Project";
 }
+
+/* contact */
+
+.contact {
+  padding-bottom: 128px;
+}
+#contact img {
+  width: 30px;
+}
+
+/* form */
+.contact::before {
+  content: "Contact";
+}
+.contact-form {
+  border: 3px solid black;
+  padding: 64px 32px;
+}
+.form-label {
+  font-weight: 700;
+}

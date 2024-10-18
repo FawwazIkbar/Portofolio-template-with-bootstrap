@@ -13,7 +13,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand fs-4 fw-bold" href="#">Fawwaz Ikbar</a>
+        <a class="navbar-brand fs-4 fw-bold" href="#">YourName</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,7 +41,7 @@
       <div class="row align-items-center">
         <div class="col-8">
           <h3 class="fw-semibold">Hi! I am</h3>
-          <h1 class="fw-bold">Fawwaz Ikbar</h1>
+          <h1 class="fw-bold">YourName</h1>
           <p>I am a beginner web developer based in Indonesia.</p>
           <a class="btn button" href="../image/img-profile.png">Resume</a>
         </div>
@@ -113,6 +113,52 @@
           <div class="work-img-item" id="work-3">
             <img src="../image/work-3.png" alt="work-3" />
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="contact container">
+      <div class="row d-flex align-items-center gap-5">
+        <div class="col">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cumque corrupti consectetur consequuntur dolore beatae provident. Pariatur, quisquam aut dolores nesciunt aperiam, perspiciatis, ut nobis maxime molestias ipsum
+            placeat nostrum!
+          </p>
+
+          <div class="row">
+            <div class="col d-flex align-items-center">
+              <img src="../image/facebook.png" alt="Facebook" />
+              <p class="mb-0 ms-2">Facebook</p>
+            </div>
+            <div class="col d-flex align-items-center">
+              <img src="../image/twitter.png" alt="Twitter" />
+              <p class="mb-0 ms-2">Twitter</p>
+            </div>
+            <div class="col d-flex align-items-center">
+              <img src="../image/instagram.png" alt="Instagram" />
+              <p class="mb-0 ms-2">Instagram</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <form class="contact-form" onsubmit="onFormSubmit(event)">
+            <div class="mb-3">
+              <label for="inp_email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="inp_email" placeholder="example@email.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="inp_subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject" required />
+            </div>
+            <div class="mb-3">
+              <label for="inp_message" class="form-label">Message</label>
+              <input type="text" class="form-control" id="inp_message" placeholder="Your Message" required />
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+              <button type="submit" class="btn button">Submit</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
