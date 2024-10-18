@@ -20,16 +20,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
+              <a class="nav-link" href="#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -38,20 +38,21 @@
 
     <!-- Home -->
     <section id="home" class="home container">
-      <div class="row align-items-center">
-        <div class="col-8">
+      <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+        <div class="col-12 col-md-8">
           <h3 class="fw-semibold">Hi! I am</h3>
           <h1 class="fw-bold">YourName</h1>
-          <p>I am a beginner web developer based in Indonesia.</p>
-          <a class="btn button" href="../image/img-profile.png">Resume</a>
+          <p>I am Software Engineer based in Indonesia</p>
+          <a class="btn button" href="../image/img-profile.png" download>Resume</a>
         </div>
-        <div class="col-4"><img src="../image/img-profile.png" class="my-image" alt="image" /></div>
+        <div class="my-img col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+          <img src="../image/img-profile.png" alt="Profile" />
+        </div>
       </div>
-
-      <div class="arrow d-flex flex-column align-items-center w-100 mt-5">
-        <a class="text-decoration-none text-dark" href="#about">More Info</a>
-        <img src="../image/arrow.svg" class="mt-2" id="arrow" alt="arrow" />
-      </div>
+      <a href="#about" class="text-decoration-none w-100 d-flex align-items-center flex-column mt-3 arrow">
+        <div class="text-dark">More Info</div>
+        <img id="arrow" class="mt-2" src="../image/arrow.svg" alt="arrow icon" />
+      </a>
     </section>
 
     <!-- about -->
@@ -97,13 +98,13 @@
     <!-- work -->
     <section id="work" class="work container">
       <div class="row d-flex align-items-center gap-5">
-        <div class="col">
+        <div class="col-12 col-md-6">
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita doloremque, sapiente debitis nemo iusto obcaecati at velit error nobis repellat similique omnis nesciunt sunt ut, distinctio quod suscipit voluptas neque et,
             accusantium sit magni. Exercitationem dolores totam odit quis, sed eveniet porro aliquam iure, voluptatibus fugit ipsa quae, eius labore.
           </p>
         </div>
-        <div class="col work-img">
+        <div class="col-12 col-md-5 work-img">
           <div class="work-img-item" id="work-1">
             <img src="../image/work-1.png" alt="work-1" />
           </div>
@@ -120,7 +121,7 @@
     <!-- contact -->
     <section id="contact" class="contact container">
       <div class="row d-flex align-items-center gap-5">
-        <div class="col">
+        <div class="col-12 col-lg-6">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cumque corrupti consectetur consequuntur dolore beatae provident. Pariatur, quisquam aut dolores nesciunt aperiam, perspiciatis, ut nobis maxime molestias ipsum
             placeat nostrum!
@@ -141,7 +142,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-5">
           <form class="contact-form" onsubmit="onFormSubmit(event)">
             <div class="mb-3">
               <label for="inp_email" class="form-label">Email address</label>
